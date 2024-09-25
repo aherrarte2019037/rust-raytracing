@@ -1,148 +1,136 @@
 {
-  "width": 1200,
-  "height": 800,
-  "samples_per_pixel": 128,
-  "max_depth": 50,
-  "sky": {
-    "texture":"data/skybox.jpg"
-  },
-  "camera": {
-    "look_from": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 4.0
+    "width": 1200,
+    "height": 800,
+    "samples_per_pixel": 128,
+    "max_depth": 50,
+    "sky": {
+        "texture": "data/skybox.jpg"
     },
-    "look_at": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": -1.0
+    "camera": {
+        "look_from": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 3.0
+        },
+        "look_at": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
+        },
+        "vup": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+        },
+        "vfov": 50.0,
+        "aspect": 1.5
     },
-    "vup": {
-      "x": 0.0,
-      "y": 1.0,
-      "z": 0.0
-    },
-    "vfov": 50.0,
-    "aspect": 1.5
-  },
-  "objects": [
-    {
-      "center": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": -1.0
-      },
-      "radius": 0.5,
-      "material": {
-        "Texture": {
-          "albedo": [
-            1.0,
-            1.0,
-            1.0
-          ],
-          "pixels": "data/earth.jpg",
-          "width": 2048,
-          "height": 1024,
-          "h_offset": 0.75
+    "objects": [
+        {
+            "center": {
+                "x": 0.0,
+                "y": 6.0,
+                "z": 20.0
+            },
+            "radius": 15.0,
+            "material": {
+                "Light": {}
+            }
+        },
+        {
+            "center": {
+                "x": 1.0,
+                "y": -0.32,
+                "z": 1.3
+            },
+            "radius": 0.2,
+            "material": {
+                "Light": {}
+            }
+        },
+        {
+            "center": {
+                "x": 1.0,
+                "y": 0.0,
+                "z": -0.2
+            },
+            "radius": 0.5,
+            "material": {
+                "Texture": {
+                    "albedo": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "pixels": "data/earth.jpg",
+                    "width": 2048,
+                    "height": 1024,
+                    "h_offset": 0.75
+                }
+            }
+        },
+        {
+            "center": {
+                "x": 0.0,
+                "y": -100.5,
+                "z": -1.0
+            },
+            "radius": 100.0,
+            "material": {
+                "Texture": {
+                    "albedo": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "pixels": "data/moon.jpg",
+                    "width": 1024,
+                    "height": 1024,
+                    "h_offset": 0.75
+                }
+            }
+        },
+        {
+            "center": {
+                "x": -1.2,
+                "y": -0.1,
+                "z": -1.0
+            },
+            "radius": 0.4,
+            "material": {
+                "Texture": {
+                    "albedo": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "pixels": "data/graffiti.jpg",
+                    "width": 3500,
+                    "height": 2625,
+                    "h_offset": 0.75
+                }
+            }
+        },
+        {
+            "center": {
+                "x": 0.0,
+                "y": -0.3,
+                "z": 1.0
+            },
+            "radius": 0.2,
+            "material": {
+                "Texture": {
+                    "albedo": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "pixels": "data/wood.jpg",
+                    "width": 4928,
+                    "height": 3712,
+                    "h_offset": 0.75
+                }
+            }
         }
-      }
-    },
-    {
-      "center": {
-        "x": -1.0,
-        "y": 0.2,
-        "z": -1.0
-      },
-      "radius": 0.1,
-      "material": {
-        "Texture": {
-          "albedo": [
-            1.0,
-            1.0,
-            1.0
-          ],
-          "pixels": "data/moon.jpg",
-          "width": 2048,
-          "height": 1024,
-          "h_offset": 0.75
-        }
-      }
-    },
-    {
-      "center": {
-        "x": 0.0,
-        "y": -100.5,
-        "z": -1.0
-      },
-      "radius": 100.0,
-      "material": {
-        "Texture": {
-          "albedo": [
-            1.0,
-            1.0,
-            1.0
-          ],
-          "pixels": "data/earth.jpg",
-          "width": 1024,
-          "height": 1024,
-          "h_offset": 0.75
-        }
-      }
-    },
-    {
-      "center": {
-        "x": 0.0,
-        "y": 16.0,
-        "z": 20.0
-      },
-      "radius": 15.0,
-      "material": {
-        "Light": {}
-      }
-    },
-    {
-      "center": {
-        "x": 1.0,
-        "y": 0.5,
-        "z": -1.0
-      },
-      "radius": 0.5,
-      "material": {
-        "Metal": {
-          "albedo": [
-            0.8,
-            0.6,
-            0.2
-          ],
-          "fuzz": 0.1
-        }
-      }
-    },
-    {
-      "center": {
-        "x": -1.2,
-        "y": 0.0,
-        "z": -1.0
-      },
-      "radius": 0.5,
-      "material": {
-        "Glass": {
-          "index_of_refraction": 1.5
-        }
-      }
-    },
-    {
-      "center": {
-        "x": -1.2,
-        "y": 0.0,
-        "z": -1.0
-      },
-      "radius": -0.45,
-      "material": {
-        "Glass": {
-          "index_of_refraction": 1.5
-        }
-      }
-    }
-  ]
+    ]
 }
