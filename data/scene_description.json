@@ -113,9 +113,9 @@
         },
         {
             "center": {
-                "x": 0.0,
+                "x": -0.5,
                 "y": -0.3,
-                "z": 1.0
+                "z": 1.2
             },
             "radius": 0.2,
             "material": {
@@ -129,6 +129,19 @@
                     "width": 4928,
                     "height": 3712,
                     "h_offset": 0.75
+                }
+            }
+        },
+        {
+            "center": {
+                "x": 0.5,
+                "y": -0.3,
+                "z": 1.5
+            },
+            "radius": 0.2,
+            "material": {
+                "Glass": {
+                    "index_of_refraction": 0.5
                 }
             }
         }
