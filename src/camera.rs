@@ -18,7 +18,7 @@ pub struct Camera {
     look_from: Point3D,
     look_at: Point3D,
     vup: Point3D,
-    vfov: f64, // vertical field-of-view in degrees
+    vfov: f64,
     aspect: f64,
 }
 
@@ -27,7 +27,7 @@ pub struct CameraParams {
     pub look_from: Point3D,
     pub look_at: Point3D,
     pub vup: Point3D,
-    pub vfov: f64, // vertical field-of-view in degrees
+    pub vfov: f64,
     pub aspect: f64,
 }
 
@@ -42,7 +42,7 @@ impl Camera {
         look_from: Point3D,
         look_at: Point3D,
         vup: Point3D,
-        vfov: f64, // vertical field-of-view in degrees
+        vfov: f64,
         aspect: f64,
     ) -> Camera {
         let theta = vfov.to_radians();

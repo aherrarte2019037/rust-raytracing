@@ -17,9 +17,6 @@ use crate::sphere::Sphere;
 #[serde_with::serde_as]
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Sky {
-    // If provided, the sky will be rendered using the equirectangular
-    // projected texture loaded from an image file at this path. Else,
-    // a light blue colored sky will be used.
     #[serde_as(as = "TextureOptionPixelsAsPath")]
     pub texture: Option<(Vec<u8>, usize, usize, String)>,
 }
@@ -96,7 +93,6 @@ fn _make_cover_world() -> Vec<Sphere> {
             }
 
             if choose_mat < 0.8 {
-                // diffuse
                 world.push(Sphere::new(
                     center,
                     0.2,
@@ -107,7 +103,6 @@ fn _make_cover_world() -> Vec<Sphere> {
                     ))),
                 ));
             } else if choose_mat < 0.95 {
-                // metal
                 world.push(Sphere::new(
                     center,
                     0.2,
@@ -121,7 +116,6 @@ fn _make_cover_world() -> Vec<Sphere> {
                     )),
                 ));
             } else {
-                // glass
                 world.push(Sphere::new(center, 0.2, Material::Glass(Glass::new(1.5))));
             }
         }

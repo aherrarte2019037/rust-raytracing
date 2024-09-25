@@ -110,8 +110,6 @@ fn ray_color(
                     }
                 }
                 None => {
-                    // don't bother bouncing absorbed rays towards lights
-                    // (they would be absorbed in the opposite direction).
                     return Srgb::new(0.0, 0.0, 0.0);
                 }
             }
